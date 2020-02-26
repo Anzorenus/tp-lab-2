@@ -13,7 +13,14 @@ bool comparison(T a, T b)
 template <typename T>
 bool comparison(char* a, char* b)
 {
-	return strlen(a) < strlen(b);
+	if (strlen(a) < strlen(b))
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	};
 }
 
 
